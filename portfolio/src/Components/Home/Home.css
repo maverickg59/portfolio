@@ -1,0 +1,20 @@
+#Home-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 12vh;
+}
+#Home-card-container {
+    margin-top: 12.5vh;
+    width: 30%;
+}
+#Home-card-img {
+    margin-top: 5%;
+    width: 90%;
+}
+#Home-card-content {
+    font-family: 'Permanent Marker';
+    padding: 20px;
+    margin: 0px;
+}

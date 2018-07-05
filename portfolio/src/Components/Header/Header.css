@@ -1,0 +1,35 @@
+#Header {  
+    position: fixed;
+    width: 100%;
+}
+#Navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#Links-list-div{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+#Links-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+}
+#Nav-list-item {
+    display: flex;
+    font-weight: 900;
+    font-size: calc(16px + (24 - 16) * (100vw - 320)/(1024 - 320));
+}
+#List-item {
+    padding-left: 5px;
+}
+.NavBar-icon {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    font-size: 20px;
+}

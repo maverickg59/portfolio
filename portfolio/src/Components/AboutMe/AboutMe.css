@@ -1,0 +1,32 @@
+#About-me-div {
+    display: flex;
+    flex-direction: column;
+}
+#About-me-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}
+#Line-item-div {
+    width: 23%;
+}
+#About-me-card-img {
+    height: 200px;
+}
+.Image {
+    height: 100%;
+    width: 95%;
+    object-fit: cover;
+    margin-top: 5px;
+}
+#About-me-card-content {
+    font-family: 'Nanum Pen Script';
+    margin: 0px;
+    padding: 7px;
+    font-size: 20px;
+}
+.Margin-bottom {
+    margin-bottom: 3vh;
+}

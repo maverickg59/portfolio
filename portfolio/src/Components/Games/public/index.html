@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>maverickg59</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|VT323|Concert+One|Quantico" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./app.js" defer></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div id="header">
+      <div id="name-title-block">
+        <h1 id="header-text">Christopher White</h1>
+      </div>
+      <div id="outer-display-image-block">
+        <div id="display-image-block">
+          <img id="profile-image" src="https://s3-us-west-2.amazonaws.com/mgx-photos/IMG_1910.jpg" alt="Chris in focus." />
+        </div>
+      </div>
+      <div id="contact-info-block">
+        <div id="contact-info-container-block">
+          <div class="tooltip">
+            <span id="location"><i class="fas fa-location-arrow fa-3x"></i></span>
+            <span class="tooltiptext">Phoenix, AZ</span>
+          </div>
+          <div class="tooltip">
+            <span><a href="tel:254-317-8882"><i class="fas fa-phone fa-3x"></i></a></span>
+            <span class="tooltiptext">(254) 317-8882</span>
+          </div>
+          <div class="tooltip">
+            <span><a href="mailto:christopher.evan.white88@gmail.com?Subject=Re:%20Portfolio%20Site" target="_top"><i class="fas fa-envelope fa-3x"></i></a></span>
+            <span class="tooltiptext">christopher.evan.<br>white88@gmail.com></span>
+          </div>
+          <span><a href="https://www.linkedin.com/in/chrisewhite/"><i class="fab fa-linkedin fa-3x"></i></a></span>
+          <span><a href="https://github.com/maverickg59"><i class="fab fa-github fa-3x"></i></a></span>
+        </div>
+      </div>
+    </div>
+    <!-- about me section -->
+    <!-- <div id="about">
+      <h2>I'm a developer with a passion for exploring the possibilities.<br> Innovation is the future.</h2>
+    </div> -->
+    <!-- game section -->
+    <div id="game">
+      <div class="sideBorder">
+      </div>
+      <div id="horizontalGameSlice">
+        <div id="gameHeader">
+          <div id="gameTitle">
+            <h3>The Interview</h3>
+          </div>
+          <div id="phaseInstructions">
+            <p id="phaseInstructionsOne">You made it to the phone interview!</p>
+            <p id="phaseInstructionsThree">That was a great try, but you didn't do so well. You should try again!</p>
+            <p id="phaseInstructionsFour">Congratulations on making it to the tech interview! A job offer is only one step away!</p>
+          </div>
+        </div>
+        <!-- game header -->
+        <div id="gameCenterSection">
+          <!-- applicant section -->
+          <div id="applicant">
+            <div id="statusBarsContainer">
+              <div id="statusBars">
+                <div>
+                  <div class="statusBars" id="resumePower">
+                    <div id="resumeHpBarFillerLeft"></div>
+                    <div class="resumeHpBarFiller" id="resumeHpBarFillerOne"></div>
+                    <div class="resumeHpBarFiller" id="resumeHpBarFillerTwo"></div>
+                    <div class="resumeHpBarFiller" id="resumeHpBarFillerThree"></div>
+                    <div id="resumeHpBarFillerRight"></div>
+                  </div>
+                  <p class="hPBarText">Resume HP</p>
+                </div>
+                <div>
+                  <div class="statusBars" id="applePower">
+                    <div id="appleHpBarFillerLeft"></div>
+                    <div class="appleHpBarFiller" id="appleHpBarFillerOne"></div>
+                    <div class="appleHpBarFiller" id="appleHpBarFillerTwo"></div>
+                    <div class="appleHpBarFiller" id="appleHpBarFillerThree"></div>
+                    <div id="appleHpBarFillerRight"></div>
+                  </div>
+                  <p class="hPBarText">Bad Apple HP</p>
+                </div>
+                <div id="cash">
+                  <p id="cashText"></p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img id="applicantSpriteIcon" src="https://s3-us-west-2.amazonaws.com/mgx-photos/frame-1.png" alt="developer applicant">
+            </div>
+            <div id="playButtonDiv">
+              <button class="play" id="play">Play</button>
+              <button class="play" id="cheatOne">skip phase</button>
+              <button class="play" id="cheatTwo">skip phase</button>
+              <button class="play" id="cheatThree">skip phase</button>
+            </div>
+          </div>
+
+          <!-- center section -->
+          <div id="centerSpace">
+            <div id="instructions">
+              <div id="enemySprites">
+                <div class="spriteDiv">
+                  <div id="applicantSprite">
+                    <img id="frame-1" class="applicantSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/frame-1.png" alt="developer applicant">
+                    <img id="frame-2" class="applicantSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/frame-2.png" alt="developer applicant">
+                    <img id="frame-3" class="applicantSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/frame-3.png" alt="developer applicant">
+                    <img id="frame-4" class="applicantSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/frame-4.png" alt="developer applicant">
+                    <img id="frame-5" class="applicantSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/frame-5.png" alt="developer applicant">
+                    <img id="frame-6" class="applicantSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/frame-6.png" alt="developer applicant">
+                  </div>
+                </div>
+                <div class="spriteDiv">
+                  <div id="greenRecruiter">
+                    <img id="greenRecruiterClosed" class="recruiterSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/standing-eyes-closed-good.png" alt="bad recruiter sprite">
+                    <img id="greenRecruiterOpen" class="recruiterSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/standing-eyes-open-good.png" alt="bad recruiter sprite">
+                  </div>
+                  <div id="redRecruiter">
+                    <img id="redRecruiterClosed" class="recruiterSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/standing-eyes-closed-bad.png" alt="bad recruiter sprite">
+                    <img id="redRecruiterOpen" class="recruiterSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/standing-eyes-open-bad.png" alt="bad recruiter sprite">
+                    <img id="redRecruiterWhack" class="recruiterSprite" src="https://s3-us-west-2.amazonaws.com/mgx-photos/dizzy.png" alt="bad recruiter sprite">
+                  </div>
+                </div>
+              </div>
+              <div id="startInstructionsDiv">
+                <p id="startInstructions">
+                  You're a developer looking for a job. You have $10k and must make it through the daunting three phase application and interview process to get that job. While you're at it you’ll lose $200 every 10 seconds, so it's important that you work fast or you
+                  might end up with no job and no money!
+                  <br><br> In the recruiter phase you’ll meet some good recruiters (wearing green) and some bad apple recruiters (wearing yellow). Advancing to the next phase requires you to pass five resumes to good recruiters and toss five apples at
+                  bad apple recruiters. Each time you make a mistake you’ll lose one hit point from the category of recruiter you made the mistake with.
+                  <br><br> The phone interview is a multiple choice test. Passing this test means you’ll advance to the tech interview. A failure sends you back to the recruiter phase and resets your hit points.
+                  <br><br> The tech interview involves solving the famous FizzBuzz problem using JavaScript. Passing this phase results in a job offer. A failure sends you back to the recruiter phase and resets your hit points.
+                  <br><br> Running out of money means you become homeless. Good luck out there!
+                </p>
+              </div>
+              <div id="passInstructions">
+                <div>
+                  <p id="passInstructionsOne">Congrats on passing the tech interview! You're a sharp developer and your effort during the interview process is about to pay off!</p>
+                  <img id="spongeBob" src="https://s3-us-west-2.amazonaws.com/mgx-photos/spongeBob+image.jpg" alt="A Few Days Later">
+                  <p id="passInstructionsTwo">We're sorry, but we've decided to hold off on hiring a new dev for 90 days. Good luck with your search!</p>
+                </div>
+              </div>
+              <div id="questionsDiv">
+              </div>
+            </div>
+            <div id="codeForm">
+              <form>
+                <textarea rows="30" name="fizzBuzz">
+  // FizzBuzz:
+  // Write a program that prints integers 1 to 100.
+  // All multiples of three should print “Fizz”
+  // All multiples of five should print “Buzz”
+  // All multiples of three and five should print “FizzBuzz”
+  // All inputs are of type number.
+
+  // Write your code below this line and submit.
+
+            </textarea>
+              </form>
+            </div>
+          </div>
+          <!-- enemy section -->
+          <div id="enemySpace">
+            <div id="phaseTwoInstructionsDiv">
+              <div>
+                <p id="phaseTwoInstructions">Answer each question and click submit. Passing this sends you to the tech interview. Failure sends you back to the recruiter phase so do your best!</p>
+              </div>
+            </div>
+            <div>
+              <img class="enemySpriteDisplay" src="https://s3-us-west-2.amazonaws.com/mgx-photos/standing-eyes-open-bad.png" alt="bad recruiter sprite">
+              <p class="enemySpriteText">Bad Apple Recruiter</p>
+            </div>
+            <div>
+              <img class="enemySpriteDisplay" src="https://s3-us-west-2.amazonaws.com/mgx-photos/standing-eyes-open-good.png" alt="good recruiter sprite">
+              <p class="enemySpriteText">Good Recruiter</p>
+            </div>
+          </div>
+        </div>
+        <!-- game footer -->
+        <div id="gameFooter">
+          <div id="gameButtonDiv">
+            <button class="buttonMargin" id="resumeButton">Throw Resume</button>
+            <button class="buttonMargin" id="appleButton">Throw Apple</button>
+            <button id="submitQuestionnaire">submit</button>
+            <button id="submitFizzBuzz">submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="sideBorder">
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div id="footer">
+      <div id="footerElements">
+        <div>
+          <div id="resumeIcon">
+            <span><i class="far fa-file-alt"></i></span>
+          </div>
+          <div id="resumeText"></div>
+        </div>
+        <div>
+          <div id="tech">
+            <span><i class="fas fa-code"></i></span>
+          </div>
+          <div id="stack"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
