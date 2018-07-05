@@ -1,6 +1,7 @@
 #Timeline-div {
     display: flex;
     flex-direction: column;
+    width: 80%;
 }
 #Timeline-list {
     display: flex;
@@ -15,28 +16,10 @@
     width: 34%;
 }
 #Timeline-card-img {
-    height: 200px;
+    height: 350px;
 }
 #Timeline-card-content {
     margin: 0px;
     padding: 7px;
     font-size: 20px;
 }
-/* #Border-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 50vw;
-    height: 150%;
-    position: absolute;
-    z-index: -1;
-    background-color: blanchedalmond;
-}
-#Left {
-    width: 10%;
-    border-right: 2px black solid;
-}
-#Right {
-    width: 10%;
-    border-left: 2px black solid;
-} */

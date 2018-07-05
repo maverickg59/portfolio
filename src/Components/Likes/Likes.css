@@ -1,6 +1,9 @@
 #Likes-div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
 }
 #Likes-list {
     display: flex;
@@ -10,10 +13,8 @@
     margin: 0px;
 }
 #Likes-line-item-div {
-    width: 45%;
+    width: 23%;
     margin-top: 5vh;
-    transform: rotateY(5deg) skewY(1deg);
-    z-index: -1;
 }
 #Likes-card-img {
     height: 200px;

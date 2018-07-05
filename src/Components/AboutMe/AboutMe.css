@@ -1,11 +1,8 @@
 #About-me-div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 45px;
-    width: 100%;
-}
-#Imports-div {
-    display: flex;
-    justify-content: space-around;
     width: 100%;
 }

@@ -7,10 +7,8 @@ export const AboutMe = props => {
     return (
         <div id="About-me-div">
             <h2 className="Margin-bottom markerFont" >About Me</h2>
-            <div id="Imports-div">
-                <Likes className="Fifty-percent-width" />
-                <Timeline className="Fifty-percent-width" />
-            </div>
+            <Timeline />
+            <Likes />
         </div>
     );
 };
