@@ -32,4 +32,14 @@ a:hover {
 }
 .Green-background {
   background-color: #00cc33;
+  opacity: 0.98;
+}
+.Image {
+  height: 100%;
+  width: 95%;
+  object-fit: cover;
+  margin-top: 5px;
+}
+.Margin-bottom {
+  margin-bottom: 3vh;
 }

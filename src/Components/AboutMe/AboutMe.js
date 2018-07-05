@@ -11,7 +11,7 @@ const contentArr = [
     {"Elon Musk inspires me.": ["Leader", "https://amp.businessinsider.com/images/5a451b22b0bcd51d008b7445-750-562.jpg"]}, 
     {"Military discipline guides me.": ["Discipline", "https://s3-us-west-2.amazonaws.com/mgx-photos/ChrisArmy.jpg"]}, 
     {"My didgeridoo moves me.": ["Instrument", "http://www.thepoweredit.com/wp-content/uploads/2015/08/didgeridoo-player.jpg"]}]
-const list = contentArr.map(element => {
+const aboutMeCards = contentArr.map(element => {
     const li = Object.keys(element);
     const key = Object.values(element)[0][0];
     const imgUrl = Object.values(element)[0][1];
@@ -35,7 +35,7 @@ export const AboutMe = props => {
     return (
         <div id="About-me-div">
             <h2 className="Margin-bottom" >About Me</h2>
-            <UnorderedList ulId="About-me-list" content={list} />
+            <UnorderedList ulId="About-me-list" content={aboutMeCards} />
         </div>
     );
 };
