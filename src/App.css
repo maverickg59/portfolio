@@ -10,9 +10,6 @@
   -o-background-size: cover;
   background-size: cover;
 }
-body, html {
-  height: 100%;
-}
 a {
   color: white;
 }
@@ -41,5 +38,24 @@ a:hover {
   margin-top: 5px;
 }
 .Margin-bottom {
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
+}
+.nanumFont {
+  font-family: 'Nanum Pen Script';
+}
+.markerFont {
+  font-family: 'Permanent Marker';
+}
+.Fifty-percent-width {
+  width: 45vw;
+}
+.Left {
+  padding-bottom: 20vh;
+  transform: rotate(355deg);
+  z-index: -1;
+}
+.Right {
+  padding-top: 20vh;
+  transform: rotate(13deg);
+  z-index: -1;
 }

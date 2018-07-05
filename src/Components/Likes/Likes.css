@@ -1,0 +1,25 @@
+#Likes-div {
+    display: flex;
+    flex-direction: column;
+}
+#Likes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0px;
+}
+#Likes-line-item-div {
+    width: 45%;
+    margin-top: 5vh;
+    transform: rotateY(5deg) skewY(1deg);
+    z-index: -1;
+}
+#Likes-card-img {
+    height: 200px;
+}
+#Likes-card-content {
+    margin: 0px;
+    padding: 7px;
+    font-size: 20px;
+}

@@ -1,23 +1,11 @@
 #About-me-div {
     display: flex;
     flex-direction: column;
+    padding-top: 45px;
+    width: 100%;
 }
-#About-me-list {
+#Imports-div {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0px;
-    margin: 0px;
-}
-#Line-item-div {
-    width: 23%;
-}
-#About-me-card-img {
-    height: 200px;
-}
-#About-me-card-content {
-    font-family: 'Nanum Pen Script';
-    margin: 0px;
-    padding: 7px;
-    font-size: 20px;
+    width: 100%;
 }

@@ -20,7 +20,7 @@ const projectCards = projectsArray.map(element => {
     const imgUrl = Object.values(element)[0][0];
     const content = Object.values(element)[0][1];
     return (
-        <div key={name} className="Margin-bottom" id="My-projects-div">
+        <div key={name} className="Margin-bottom" id="My-projects-line-item-div">
             <ImgCard 
             containerClassName="Card-container-shadow"
             containerId="Projects-card-container"
@@ -28,7 +28,8 @@ const projectCards = projectsArray.map(element => {
             imgId="Projects-card-img"
             src={imgUrl}
             cardContent={content}
-            cardContentId="Projects-card-content" 
+            cardContentId="Projects-card-content"
+            cardContentClass="nanumFont"
             />
         </div>
     );
@@ -37,7 +38,7 @@ const projectCards = projectsArray.map(element => {
 export const Projects = props => {
     return (
         <div id="My-projects-div">
-            <h2>My Projects</h2>
+            <h2 className="Margin-bottom markerFont">My Projects</h2>
             <UnorderedList ulId="My-projects-list" content={projectCards} />
         </div>
     );
