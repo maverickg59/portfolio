@@ -1,4 +1,5 @@
 import React from 'react';
+import { Label } from '../../SubComponents/Label';
 import { ImgCard } from '../../SubComponents/ImgCard';
 import { UnorderedList } from '../../SubComponents/UnorderedList';
 import './Timeline.css';
@@ -17,12 +18,13 @@ const timelineArray = [
     {"2018": ["https://s3-us-west-2.amazonaws.com/mgx-photos/chris-2018.jpg", eighteen]},
 ];
 const timeline = timelineArray.map(element => {
-    const name = Object.keys(element);
+    const year = Object.keys(element);
     const imgUrl = Object.values(element)[0][0];
     const content = Object.values(element)[0][1];
     if (timelineArray.indexOf(element) % 2 === 0) {
         return (
-            <div key={name} className="Margin-bottom Left" id="Timeline-line-item-div">
+            <div key={year} className="Margin-bottom Left" id="Timeline-line-item-div">
+                <Label labelClassName="Label markerFont" labelId="Likes-date-label" text={year} />
                 <ImgCard 
                 containerClassName="Card-container-shadow"
                 containerId="Timeline-card-container"
@@ -37,7 +39,8 @@ const timeline = timelineArray.map(element => {
         );
     } else {
         return (
-            <div key={name} className="Margin-bottom Right" id="Timeline-line-item-div">
+            <div key={year} className="Margin-bottom Right" id="Timeline-line-item-div">
+                <Label labelClassName="Label markerFont" labelId="Likes-date-label" text={year} />
                 <ImgCard 
                 containerClassName="Card-container-shadow"
                 containerId="Timeline-card-container"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { UnorderedList } from '../../SubComponents/UnorderedList';
-import { ImgCard } from '../../SubComponents/ImgCard'
+import { ImgCard } from '../../SubComponents/ImgCard';
 import './Likes.css'
 const likesArr = [
     {"Hometown: Denver, CO": ["Hometown", "https://images1.westword.com/imager/u/745xauto/8854397/denver_skyline_by_jeffrey_beal_instagram_2017.jpg"]}, 

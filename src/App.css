@@ -46,16 +46,25 @@ a:hover {
 .markerFont {
   font-family: 'Permanent Marker';
 }
-.Fifty-percent-width {
-  width: 45vw;
-}
 .Left {
-  padding-bottom: 20vh;
+  margin-bottom: 20vh;
   transform: rotate(355deg);
   z-index: -1;
 }
 .Right {
-  padding-top: 20vh;
+  margin-top: 20vh;
   transform: rotate(13deg);
   z-index: -1;
+}
+.Label {
+  border: 7px solid white;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  background-color: #0d4f8b;
+  width: 120px;
+  position: absolute;
+  left: -30px;
+  top: 20px;
 }
