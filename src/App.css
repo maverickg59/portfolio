@@ -66,6 +66,6 @@
   margin: 0px;
   padding: 7px;
 }
-.ReactModal__Body--open {
-  overflow: hidden;
+.Zero-margin-bottom {
+  margin-bottom: 0px;
 }

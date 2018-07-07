@@ -46,10 +46,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 .Projects-modal-image {
     max-width: 100%;
     margin: 0px;
     padding-bottom: 10px;
     max-height: 80vh;
+}
+#Projects-modal-tech-links {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.Projects-modal-tech-link {
+    padding: 4px;
+    margin: 4px;
+    text-decoration: none;
+    list-style-type: none;
+    border: 2px solid red;
 }

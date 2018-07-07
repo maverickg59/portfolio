@@ -13,7 +13,7 @@ export const ImgCard = props => {
             src={props.src} 
             alt={props.alt}
             />
-            <p className={props.cardContentClass} id={props.cardContentId}>{props.cardContent}</p>
+            <div className={props.cardContentClass} id={props.cardContentId}>{props.cardContent}</div>
         </div>
     );
 }
