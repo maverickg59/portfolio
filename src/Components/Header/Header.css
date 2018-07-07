@@ -3,23 +3,23 @@
     width: 100%;
     z-index: 5;
 }
-#Navbar {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 #Links-list-div{
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 100%;
 }
 #Links-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 90%;
     padding: 11px;
     margin: 0px;
+}
+#Navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 #Nav-list-item {
     display: flex;

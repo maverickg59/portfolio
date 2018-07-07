@@ -1,6 +1,7 @@
 import React from 'react';
 import { UnorderedList } from '../../SubComponents/UnorderedList';
 import { ImgCard } from '../../SubComponents/ImgCard'
+import { Button } from 'reactstrap';
 import ProjectModal from '../../ReactStrap/ProjectModal';
 import './Projects.css'
 const projectsArray = [
@@ -49,9 +50,8 @@ const projectCards = projectsArray.map(element => {
             modalClassName="Project-cards-modal"
             modalId="Projects-modal"
             autoFocus={false}
-            buttonOneLabel="See More"
-            buttonOneHref={buttonOne}
             buttonTwoLabel="Close"
+            modalButtonOne={<a target="_blank" href={buttonOne}><Button color="primary">See More</Button></a>}
 
             />
         </div>
