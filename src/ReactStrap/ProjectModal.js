@@ -25,8 +25,8 @@ class ProjectModal extends React.Component {
           <ModalHeader toggle={this.toggle}>{this.props.modalTitle}</ModalHeader>
           <ModalBody>{this.props.modalBody}</ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+            <a target="_blank" href={this.props.buttonOneHref}><Button color="primary">{this.props.buttonOneLabel}</Button>{' '}</a>
+            <Button color="secondary" onClick={this.toggle}>{this.props.buttonTwoLabel}</Button>
           </ModalFooter>
         </Modal>
       </div>
