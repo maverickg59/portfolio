@@ -1,6 +1,7 @@
 #Header {  
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 #Navbar {
     display: flex;
@@ -17,12 +18,19 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 0px;
+    padding: 11px;
+    margin: 0px;
 }
 #Nav-list-item {
     display: flex;
     font-weight: 900;
     font-size: calc(16px + (24 - 16) * (100vw - 320)/(1024 - 320));
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+#Nav-list-item:hover {
+    color: black;
 }
 #List-item {
     padding-left: 5px;

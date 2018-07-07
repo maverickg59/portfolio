@@ -2,4 +2,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 0px;
+    padding: 12px;
+    flex-shrink: 0;
+}
+#Footer p {
+    margin: 0px;
 }

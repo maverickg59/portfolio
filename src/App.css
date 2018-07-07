@@ -9,16 +9,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-a {
-  color: white;
-}
-a:hover {
-  color: black;
-}
-.List-item {
-  text-decoration: none;
-  list-style-type: none;
+  flex: 1 0 auto;
 }
 .Card-container-shadow {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
@@ -57,6 +48,9 @@ a:hover {
   z-index: -1;
 }
 .Label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 7px solid white;
   color: white;
   font-weight: 800;
@@ -67,4 +61,11 @@ a:hover {
   position: absolute;
   left: -30px;
   top: 20px;
+}
+.Label p {
+  margin: 0px;
+  padding: 7px;
+}
+.ReactModal__Body--open {
+  overflow: hidden;
 }

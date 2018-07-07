@@ -16,6 +16,9 @@
     width: 23%;
     margin-top: 5vh;
 }
+#Likes-line-item-div:hover {
+    transform: rotate(359deg);
+}
 #Likes-card-img {
     height: 200px;
 }

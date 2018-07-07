@@ -9,8 +9,9 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    height: 99.9vh;
     padding-top: 45px;
+    overflow: auto;
 }
 #My-projects-list {
     display: flex;
@@ -21,6 +22,7 @@
 }
 #My-projects-line-item-div {
     width: 30%;
+    padding: 1%;
 }
 #Projects-card-img {
     height: 200px;
@@ -29,4 +31,25 @@
     margin: 0px;
     padding: 7px;
     font-size: 20px;
+}
+#Projects-cards-modal-button {
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    width: 100%;
+}
+#Projects-cards-modal-button:hover {
+    transform: rotate(1deg);
+    opacity: 0.8;
+}
+.Projects-modal-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Projects-modal-image {
+    max-width: 100%;
+    margin: 0px;
+    padding-bottom: 10px;
+    max-height: 80vh;
 }
