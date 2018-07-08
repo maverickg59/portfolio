@@ -25,14 +25,20 @@
 #My-projects-line-item-div {
     width: 32vmax;
     padding: 1%;
+    padding-top: 0px;
 }
 #Projects-card-img {
     height: 200px;
 }
 #Projects-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 0px;
     padding: 7px;
-    font-size: 20px;
+    padding-bottom: 0px;
+    font-size: 5vmin;
 }
 #Projects-cards-modal-button {
     padding: 0px;
@@ -69,4 +75,9 @@
     text-decoration: none;
     list-style-type: none;
     border: 2px solid red;
+}
+.More-info-icon {
+    position: relative;
+    color: #006dcc;
+    opacity: 0.9;
 }

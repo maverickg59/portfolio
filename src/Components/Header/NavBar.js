@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Hamburger from '../../ReactStrap/Hamburger';
 import { LinksList } from '../../SubComponents/LinksList';
-import { FaGithub, FaLinkedinSquare, FaHome, FaArchive, FaTerminal, FaBriefcase, FaGamepad } from 'react-icons/lib/fa';
+import { FaGithub, FaLinkedinSquare, FaHome, FaArchive, FaTerminal, FaBriefcase } from 'react-icons/lib/fa';
+// FaGamepad
 import { NavItem, NavLink } from 'reactstrap';
 const navBarArray = [
     {'Home': ['#Home-div', <FaHome />]}, 

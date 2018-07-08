@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPlusSquare } from 'react-icons/lib/fa';
 import { UnorderedList } from '../../SubComponents/UnorderedList';
 import { ImgCard } from '../../SubComponents/ImgCard'
 import { Button } from 'reactstrap';
@@ -10,7 +11,7 @@ const projectsArray = [
     {"Write Me": ["https://s3-us-west-2.amazonaws.com/mgx-photos/write-me.png", "Write Me is a single page web application developed to assist secondary and post-secondary students in writing and citing their research papers. This application uses a proprietary layout framework and EasyBib's external Citation Formatting API.", ["HTML5", "CSS3", "jQuery", "Bootstrap", "External REST API"], "https://github.com/maverickg59/writeMe"]},
     {"Intact": ["https://s3-us-west-2.amazonaws.com/mgx-photos/intact-login.png", "Intact is a React Native iOS application that was spawned during a 56 hour hackathon in Denver. Our initial implementation earned us a nine day period to refactor the web app into an iOS application for Barrick Gold. I played the role of lead developer, coding for 18 to 20 hours a day; developing more than 90% of this application. This app was especially challenging because I was new to Node JS and started learning React Native on day one of the nine day sprint.", ["React Native", "Router Flux", "Node JS", "Express", "Knex", "PostgreSQL", "Expo", "Heroku", "Internal REST API"], "https://github.com/maverickg59/intact-app"]},
     {"AWS S3 Photobucket": ["https://s3-us-west-2.amazonaws.com/mgx-photos/PhotoBucket.png", "I developed this photo bucket with the intent to store images on Amazon S3 to reduce internal server workload and deliver images in the style of CDN. Implementation requires your internal API to POST to S3 first (you can use something like SkipperS3), and later upload the image URL retrieved in the S3 response as part of your data object. Most of the images on this site are delivered out of the photo bucket shown above.", ["AWS S3", "AWS S3 REST API", "Internal REST API"], "https://docs.aws.amazon.com/AmazonS3/latest/gsg/AmazonS3Basics.html"]}, 
-    {"Go REST API": ["https://s3-us-west-2.amazonaws.com/mgx-photos/go-rest-api.png", "I developed this API to persist data and CRUD against MongoDB utilizing modern REST API principles. Future implementations can be modified to suit the needs of it's specific use case and application.", ["Golang", "Gorilla Mux", "MGO", "MongoDB"], "https://github.com/maverickg59/go_rest_api_mongodb"]}
+    {"Go REST API": ["https://s3-us-west-2.amazonaws.com/mgx-photos/go-rest-api.png", "I developed this API to CRUD against MongoDB for data persistence utilizing modern REST API principles. Future implementations can be modified to suit the needs of it's specific use case and application.", ["Golang", "Gorilla Mux", "MGO", "MongoDB"], "https://github.com/maverickg59/go_rest_api_mongodb"]}
 ]
 const projectCards = projectsArray.map(element => {
     const name = Object.keys(element);
@@ -28,7 +29,7 @@ const projectCards = projectsArray.map(element => {
     src={imgUrl} 
     cardContent={techList}
     cardContentClass="Zero-margin-bottom" />
-    const buttonContents = <ImgCard 
+    const buttonContents =<ImgCard 
     containerClassName="Card-container-shadow"
     containerId="Projects-card-container"
     imgClassName="Card-container-inset Image"
@@ -37,6 +38,7 @@ const projectCards = projectsArray.map(element => {
     cardContent={name}
     cardContentId="Projects-card-content"
     cardContentClass="nanumFont"
+    icon={<FaPlusSquare key={name.concat("icon")} className="More-info-icon" />}
     />;
     return (
         <div key={name} className="Margin-bottom" id="My-projects-line-item-div">
@@ -52,7 +54,6 @@ const projectCards = projectsArray.map(element => {
             autoFocus={false}
             buttonTwoLabel="Close"
             modalButtonOne={<a target="_blank" href={buttonOne}><Button color="primary">See More</Button></a>}
-
             />
         </div>
     );
