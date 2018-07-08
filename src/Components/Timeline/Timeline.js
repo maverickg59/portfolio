@@ -23,7 +23,7 @@ const timeline = timelineArray.map(element => {
     const content = Object.values(element)[0][1];
     if (timelineArray.indexOf(element) % 2 === 0) {
         return (
-            <div key={year} className="Margin-bottom Left" id="Timeline-line-item-div">
+            <div key={year} className="Left" id="Timeline-line-item-div">
                 <Label labelClassName="Label markerFont" labelId="Likes-date-label" text={year} />
                 <ImgCard 
                 containerClassName="Card-container-shadow"
@@ -39,7 +39,7 @@ const timeline = timelineArray.map(element => {
         );
     } else {
         return (
-            <div key={year} className="Margin-bottom Right" id="Timeline-line-item-div">
+            <div key={year} className="Right" id="Timeline-line-item-div">
                 <Label labelClassName="Label markerFont" labelId="Likes-date-label" text={year} />
                 <ImgCard 
                 containerClassName="Card-container-shadow"
@@ -60,10 +60,6 @@ const timeline = timelineArray.map(element => {
 export const Timeline = props => {
     return(
         <div className={props.className} id="Timeline-div">
-            {/* <div id="Border-container">
-                <div id="Left"></div>
-                <div id="Right"></div>
-            </div> */}
             <UnorderedList ulId="Timeline-list" content={timeline} />
         </div>
     );

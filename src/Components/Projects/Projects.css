@@ -9,19 +9,21 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 99.9vh;
+    height: 100vh;
     padding-top: 45px;
+    color: black;
     overflow: auto;
 }
 #My-projects-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
     padding: 0px;
     margin: 0px;
 }
 #My-projects-line-item-div {
-    width: 30%;
+    width: 32vmax;
     padding: 1%;
 }
 #Projects-card-img {

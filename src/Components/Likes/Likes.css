@@ -8,12 +8,13 @@
 #Likes-list {
     display: flex;
     flex-wrap: wrap;
+    width: 100vw;
     justify-content: space-around;
     padding: 0px;
     margin: 0px;
 }
 #Likes-line-item-div {
-    width: 23%;
+    width: 24vmax;
     margin-top: 5vh;
 }
 #Likes-line-item-div:hover {

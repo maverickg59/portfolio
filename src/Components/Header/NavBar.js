@@ -7,7 +7,7 @@ const navBarArray = [
     {'Home': ['#Home-div', <FaHome />]}, 
     {'About': ['#About-me-div', <FaArchive />]}, 
     {'Projects': ['#My-projects-div', <FaTerminal />]},  
-    {'Games': ['#games', <FaGamepad />]},
+    // {'Games': ['#games', <FaGamepad />]},
     {'Resume': ['https://drive.google.com/open?id=1gtAjRko0TLO5CoZJkBvS2Xs1oa_FOl3B', <FaBriefcase />]},
     {"GitHub": ["https://github.com/maverickg59", <FaGithub />]},
     {"LinkedIn": ["https://www.linkedin.com/in/chrisewhite/", <FaLinkedinSquare />]}]
