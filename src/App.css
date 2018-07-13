@@ -21,6 +21,7 @@
 .Green-background {
   background-color: #00cc33;
   opacity: 0.98;
+  padding: 0px;
 }
 .Image {
   height: 100%;
@@ -74,4 +75,7 @@
 }
 .Zero-margin-bottom {
   margin-bottom: 0px;
+}
+.White-font {
+  color: white;
 }

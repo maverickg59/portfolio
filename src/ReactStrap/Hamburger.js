@@ -7,7 +7,7 @@ export default class Hamburger extends React.Component {
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.state = {
-      collapsed: true
+      collapsed: true, hello: ""
     };
   }
 
@@ -15,14 +15,15 @@ export default class Hamburger extends React.Component {
     this.setState({
       collapsed: !this.state.collapsed
     });
+    console.log(this.state.collapsed)
   }
   render() {
-    return (
+    return (  
       <div>
-        <Navbar className={this.props.className} dark>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+        <Navbar className={this.props.className} id="Hamburger-nav" dark>
+          <NavbarToggler onClick={this.toggleNavbar} />
           <Collapse isOpen={!this.state.collapsed} navbar>
-    <Nav onClick={this.toggleNavbar} navbar>
+            <Nav onClick={this.toggleNavbar} navbar>
               {this.props.navBarItems}
             </Nav>
           </Collapse>

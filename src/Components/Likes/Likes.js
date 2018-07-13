@@ -19,7 +19,7 @@ const likesCards = likesArr.map(element => {
         <div key={key} className="Margin-bottom" id="Likes-line-item-div">
             <ImgCard
             containerClassName="Card-container-shadow"
-            containerId="Likes-card-container"
+            containerId=""
             imgClassName="Card-container-inset Image"
             imgId="Likes-card-img" 
             src={imgUrl}

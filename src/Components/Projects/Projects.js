@@ -62,7 +62,7 @@ const projectCards = projectsArray.map(element => {
 export const Projects = props => {
     return (
         <div id="My-projects-div">
-            <h2 className="Margin-bottom markerFont">My Projects</h2>
+            <h2 className="Margin-bottom markerFont White-font">My Projects</h2>
             <UnorderedList ulId="My-projects-list" content={projectCards} />
         </div>
     );
