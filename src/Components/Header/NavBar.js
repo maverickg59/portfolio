@@ -18,7 +18,7 @@ const links = navBarArray.map(element => {
     const icon = Object.values(element)[0][1];
     const navLink = <a className="List-item" id="Nav-list-item" key={key} href={link}><div className="NavBar-icon">{icon}</div><li>{key}</li></a>;
     const extLink = <a className="List-item" id="Nav-list-item" key={key} href={link} target="_blank" ><div className="NavBar-icon">{icon}</div><li>{key}</li></a>;
-    return navBarArray.indexOf(element) < 4 ? navLink : extLink; 
+    return navBarArray.indexOf(element) < 3 ? navLink : extLink; 
 });
 const hamburgerLinks = navBarArray.map(element => {
     const key = Object.keys(element);
@@ -26,20 +26,29 @@ const hamburgerLinks = navBarArray.map(element => {
     const icon = Object.values(element)[0][1];
     const navLink = <NavItem key={key}><NavLink href={link} ><div>{icon}</div>{key}</NavLink></NavItem>;
     const extLink = <NavItem key={key}><NavLink href={link} target="_blank"><div>{icon}</div>{key}</NavLink></NavItem>;
-    return navBarArray.indexOf(element) < 4 ? navLink : extLink;
+    return navBarArray.indexOf(element) < 3 ? navLink : extLink;
 });
 
 
 class NavBar extends Component {
     constructor(props) {
         super(props);
-        this.state = {width: window.innerWidth};
-
+        this.state = {
+            width: 0,
+            height: 0
+        };
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.navBar = this.navBar.bind(this);
-        this.forceUpdateHandler = this.forceUpdateHandler.bind(this);
     }
-    forceUpdateHandler(){
-        this.forceUpdate();
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    } 
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }  
+    updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
     }
     navBar() {
         if (this.state.width > 775) {
